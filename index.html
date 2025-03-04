@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="myproject.css"> 
+<script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>  
+<title>Weather app</title>
+</head>
+<body>
+    <form id="myForm">
+        <div class="container">
+        <input type="text" placeholder="Enter a city" class="text-input" id="city-input">
+        <input type="submit" value="Search" class="submit-input">
+    </form>
+    <h1 id="current-city">
+        Paris
+    </h1>
+    <div class="current-weather">
+        <p>
+        <span id="current-time"></span>,moderate rain</br>
+        Humidity:<span class="percent">87%</span>,Wind:<span class="Kilo">7.2km/h</span>
+    </p>
+    </div>
+    <div class="weather">
+       <span class="emoji">☀</span>
+       <span class="number" id="current-Temp">24</span>
+       <span class="degree">°C</span>
+    </div>
+    <footer class="bottom">
+        This project was coded by <a href="www.google.com">Yembe Blessing Mankeh</a> and is on <a href="www.google.com">Github</a>.
+    </footer>
+</div>
+    <script src="myproject.js"></script>
+</script>
+</body>
+</html>
+
