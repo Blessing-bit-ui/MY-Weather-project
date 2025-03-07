@@ -40,28 +40,26 @@
         display:flex;
         justify-content:space-between;
     }
-    .weather{
-        margin-top:-65px;
-        margin-bottom:65px;
-    }
     .current-weather{
         font-weight:100;
         margin-top:-50px;
         font-weight:300;
     }
+    .weather{
+        display:inline-flex;
+    }
     .emoji{
-        font-size:50px;
-        color: yellow;
+        color:yellow;
+        font-size:30px;
     }
     .number{
         font-size:80px;
+        margin-top:-50px;
     }
-     .degree{
-        position:relative;
-        top:-45px;
-        left:-10px;
-    
+    .degree{
+        margin-top:-30px;
     }
+
     .percent{
         color:red;
         font-weight:bold;
