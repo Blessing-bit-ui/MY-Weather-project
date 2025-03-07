@@ -3,16 +3,29 @@ let temperatureElement=document.querySelector("#current-Temp");
 let temperature= response.data.temperature.current;
 let descriptionElement=document.querySelector("#description");
 let humidityElement=document.querySelector("#percentage");
-let windElement=document.querySelector("#Kilos")
-
+let windElement=document.querySelector("#Kilos");
+let timeElement=document.querySelector("#current-time");
+let date=new Date(response.data.time * 1000);
 
 
 temperatureElement.innerHTML= Math.round(temperature);
 descriptionElement.innerHTML = response.data.condition.description;
 humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
 windElement.innerHTML=`${response.data.wind.speed}Km/h`;
+timeElement.innerHTML=displayDate(date);
 
 
+function displayDate(date){
+let hours=date.getHours();
+let minutes=date.getMinutes();
+let days=["Sunday", "Monday", "Tuesday", "Wednesday","Thursday", "Friday", "Saturday"];
+let day=days[date.getDay()];
+if(minutes<10){
+  minutes=`0${minutes}`
+}
+
+return `${day} ${hours}:${minutes}`;
+};
 }
 
 
