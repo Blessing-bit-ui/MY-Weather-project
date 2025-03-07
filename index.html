@@ -11,25 +11,31 @@
 <title>Weather app</title>
 </head>
 <body>
-    <form id="myForm">
-        <div class="container">
+      <div class="container">
+    <form id="myForm">  
         <input type="text" placeholder="Enter a city" class="text-input" id="city-input">
         <input type="submit" value="Search" class="submit-input">
     </form>
+    <header>
     <h1 id="current-city">
         Paris
     </h1>
+    </header>
+    <main>
+    <div class="data">
     <div class="current-weather">
         <p>
-        <span id="current-time"></span>,moderate rain</br>
-        Humidity:<span class="percent">87%</span>,Wind:<span class="Kilo">7.2km/h</span>
+        <span id="current-time"></span>,<span id="description"></span></br>
+        Humidity:<span class="percent" id="percentage"></span>,Wind:<span class="Kilo" id="Kilos"></span>
     </p>
     </div>
     <div class="weather">
-       <span class="emoji">☀</span>
+       <span class="emoji" id ="emojis">☀</span>
        <span class="number" id="current-Temp">24</span>
        <span class="degree">°C</span>
     </div>
+</div>
+</main>
     <footer class="bottom">
         This project was coded by <a href="https://github.com/Blessing-bit-ui">Yembe Blessing Mankeh</a> and is on <a href=" https://github.com/Blessing-bit-ui/MY-Weather-project">Github</a> and its hosted on <a href="https://yembeblessing.netlify.app/">Netlify</a>.
     </footer>

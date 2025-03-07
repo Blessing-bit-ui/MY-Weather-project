@@ -7,7 +7,8 @@
         background-color:white;
         margin:100px auto;
         max-width:50%;
-        padding:35px;
+        height:300px;
+        padding:50px;
         border-radius:10px;
        box-shadow: rgba(65, 50, 100, 0.08) 0px 30px 50px 0px;
     }
@@ -33,11 +34,20 @@
     }
     h1{
         font-size:50px;
-        margin-top:50px;
+        margin-top:40px;
+    }
+    .data{
+        display:flex;
+        justify-content:space-between;
+    }
+    .weather{
+        margin-top:-65px;
+        margin-bottom:65px;
     }
     .current-weather{
         font-weight:100;
-        margin-top:-20px;
+        margin-top:-50px;
+        font-weight:300;
     }
     .emoji{
         font-size:50px;
@@ -50,11 +60,7 @@
         position:relative;
         top:-45px;
         left:-10px;
-     }
-    .weather{
-        position: relative;
-        left:350px;
-        top:-100px;
+    
     }
     .percent{
         color:red;
@@ -67,4 +73,6 @@
     .bottom{
         padding-bottom: 30px;
         text-align: center;
+        font-size:14px;
+        font-weight:100;
     }
