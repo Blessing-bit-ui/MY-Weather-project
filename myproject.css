@@ -5,17 +5,21 @@
     }
     .container{
         background-color:white;
-        margin:100px auto;
-        max-width:50%;
-        height:350px;
+        margin:100px auto; 
+        min-width:300px;
+        max-width:600px;
         padding:50px;
         border-radius:10px;
        box-shadow: rgba(65, 50, 100, 0.08) 0px 30px 50px 0px;
     }
+    .input{
+        display:flex;
+    }
+
     .text-input{
         background-color: aliceblue;
-        width:450px;
-        padding:20px;
+        width:500px;
+        
         font-size:20px;
         border-radius:5px;
         border:none;
@@ -25,42 +29,36 @@
     }
     .submit-input{
         background-color:rgb(136, 93, 241);
-        width:90px;
+        
         font-size:17px;
-        padding:20px;
+        
         border-radius:10px;
         border:none;
         color:white;
     }
     h1{
         font-size:35px;
-        margin-top:40px;
+        
     }
     .data{
-        display:flex;
-        justify-content:space-between;
-        margin-top:50px;
+        
     }
     .current-weather{
         font-weight:100;
-        margin-top:-30px;
-        font-weight:300;
+        
 
     }
     .weather{
-        display:inline-flex;
+        
     }
     .icon{
-        width:100px;
-        margin-top:-15px;
-        margin-right:-10px;   
+           
     }
     .number{
-        font-size:80px;
-        margin-top:-50px;
+        
     }
     .degree{
-        margin-top:-30px;
+        
     }
 
     .percent{
@@ -73,7 +71,7 @@
     }
     .bottom{
 
-        padding-top: 80px;
+        
         text-align: center;
         font-size:14px;
         font-weight:100;
