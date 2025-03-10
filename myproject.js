@@ -45,7 +45,28 @@ function displayCity(event){
     h1.innerHTML=cityElement.value;
     searchCity(cityElement.value)
 }
-let form=document.querySelector("#myForm");
-form.addEventListener("submit",displayCity)
 
-    
+let days=["Monday", "Tuesday", "Wednesday","Thursday", "Friday", "Saturday"];
+
+function displayForecast(){
+  let forecastsElement = document.querySelector("#forecasting");
+  let WritingDays="";
+days.forEach(function(day){
+ WritingDays+=
+  `<div class="forecast">
+  <div class="weather-forcast">
+    <div class="weather-day">${day}</div>
+    <div class="weather-icon">⛅</div>
+    <div class="weather-degree">
+      <div class="weather-degrees">15°</div>
+      <div class="weather-degreess">9°</div>
+    </div>
+  </div>
+</div>`;
+});
+forecastsElement.innerHTML=WritingDays;
+}
+let form=document.querySelector("#myForm");
+form.addEventListener("submit",displayCity);
+
+displayForecast()
