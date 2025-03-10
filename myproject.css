@@ -70,6 +70,22 @@
         color:red;
         font-weight:bold;
     }
+    .forecast{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 20px;
+        line-height:25px;
+    }
+    .weather-day{
+        text-align:center;
+    }
+    .weather-icon{
+        text-align:center;
+    }
+    .weather-degree{
+        display:flex;
+        gap:2px;
+    }
     .bottom{        
         text-align:justify;
         padding-top:40px;
