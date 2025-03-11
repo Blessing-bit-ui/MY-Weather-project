@@ -57,7 +57,6 @@ let date=new Date(timestamp*1000);
 return days[date.getDay()];
 }
 
-
 function displayForecast(response) {
    console.log(response.data)
   let forecastsElement = document.querySelector("#forecasting");
@@ -84,3 +83,4 @@ function displayForecast(response) {
 let form=document.querySelector("#myForm");
 form.addEventListener("submit",displayCity);
 
+searchCity("Paris")

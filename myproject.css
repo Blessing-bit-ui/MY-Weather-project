@@ -76,16 +76,22 @@
         padding-top: 20px;
         line-height:25px;
     }
-    .weather-day{
-        text-align:center;
+    .weather-forcast{
+        margin-left:30px;
     }
-    .weather-icon{
-        text-align:justify;
-        width:10px;
+    
+    .weather-icon img {
+        text-align:center;
+        margin-right:10px;
+        width:50%;
     }
     .weather-degree{
         display:flex;
-        gap:2px;
+        color:red;
+        gap:10px;
+    }
+    .weather-degreess{
+        font-weight:100;
     }
     .bottom{        
         text-align:justify;
