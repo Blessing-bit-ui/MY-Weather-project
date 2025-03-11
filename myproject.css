@@ -80,7 +80,8 @@
         text-align:center;
     }
     .weather-icon{
-        text-align:center;
+        text-align:justify;
+        width:10px;
     }
     .weather-degree{
         display:flex;
